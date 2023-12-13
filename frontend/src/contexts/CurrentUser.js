@@ -12,10 +12,10 @@ function CurrentUserProvider({ children }){
                     'Authorization' : `Bearer ${localStorage.getItem('token')}`
                 }
             })
-            let user = await response.json()
+            let user = await response.json();
             setCurrentUser(user)
         }
-        getLoggedInUser()
+        getLoggedInUser();
     }, [])
   
 
